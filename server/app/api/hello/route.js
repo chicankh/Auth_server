@@ -3,7 +3,8 @@ export async function Get() {
         JSON.stringify({message: "Hello!"}),
         {
             status: 200,
-            headers: ("Content-Type: application/json"),
+            headers: {
+                "Content-Type": "application/json"},
         }
     );
 }
